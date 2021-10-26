@@ -1,7 +1,10 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:food_app/colors.dart';
 import 'package:food_app/homescreen.dart/hscreen_configration.dart';
 
+//menu and logo widget
 Widget menulogo() {
   return Container(
     margin: EdgeInsets.only(top: 80),
@@ -16,6 +19,7 @@ Widget menulogo() {
   );
 }
 
+//Location widget
 Widget location(String locationName) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
@@ -33,6 +37,50 @@ Widget location(String locationName) {
       ),
       Icon(
         Icons.keyboard_arrow_down,
+      ),
+    ],
+  );
+}
+
+//serchbox
+Widget searchbar() {
+  return TextField(
+    decoration: searchbarborder,
+  );
+}
+
+// Food Categories Text
+Widget foodCatText() {
+  return Row(
+    children: [
+      Text(
+        "Food",
+        style: foodCattxt1,
+      ),
+      SizedBox(
+        width: 2,
+      ),
+      Text(
+        " Categories",
+        style: foodCattxt2,
+      ),
+    ],
+  );
+}
+
+Widget favText(String category, String food) {
+  return Row(
+    children: [
+      Text(
+        category,
+        style: foodCattxt2,
+      ),
+      SizedBox(
+        width: 2,
+      ),
+      Text(
+        food,
+        style: foodCattxt1,
       ),
     ],
   );
