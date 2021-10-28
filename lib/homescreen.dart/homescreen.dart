@@ -37,13 +37,28 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Container(
             padding: EdgeInsets.only(left: 20),
-            child: foodCatText(),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: 20),
-            height: 50,
-            child: Categories(),
-          ),
+            child: Column(
+              children: [
+                Container(
+                  child: foodCatText(),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 20),
+                  height: 45,
+                  child: Categories(),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 20),
+                  child: favText("Favorite", "Food","Search More"),
+                ),
+                Container(
+                  height: 170,
+                  margin: EdgeInsets.only(top: 20),
+                  child: MenuCard(),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );

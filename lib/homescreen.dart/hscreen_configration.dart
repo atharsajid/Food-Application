@@ -18,9 +18,34 @@ Widget circleContainer(
       border: Border.all(color: primarycolor, width: borederwith),
       image: DecorationImage(
         image: AssetImage(img),
+        fit: BoxFit.cover
       ),
     ),
   );
+}
+
+Widget priceContainer(
+    double height, double width,double borderwith String price) {
+  return Container(
+   
+    height: height,
+    width: width,
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      border: Border.all(color: primarycolor, width: borderwith),
+     
+      ),
+      child: Row(
+        children: [
+          Text("\$ ",style:TextStyle(color: primarycolor,fontSize: 12),),
+          Text(price,style: TextStyle(
+            fontSize: 16,
+            fontWeight: Font
+          ),),
+        ],
+      ),
+    );
+  
 }
 
 //Text Styles
@@ -38,6 +63,16 @@ final foodCattxt2 = TextStyle(
   fontSize: 24,
   fontWeight: FontWeight.bold,
 );
+final foodCattxt3 = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  color: primarycolor,
+);
+final categoriestxt = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.bold,
+);
+
 //Searbar border style
 final searchbarborder = InputDecoration(
   enabledBorder: OutlineInputBorder(

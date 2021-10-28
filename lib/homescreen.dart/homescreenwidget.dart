@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:food_app/colors.dart';
 import 'package:food_app/homescreen.dart/hscreen_configration.dart';
@@ -68,7 +66,7 @@ Widget foodCatText() {
   );
 }
 
-Widget favText(String category, String food) {
+Widget favText(String category, String food, String search) {
   return Row(
     children: [
       Text(
@@ -82,6 +80,13 @@ Widget favText(String category, String food) {
         food,
         style: foodCattxt1,
       ),
+      Spacer(),
+      Text(
+        search,
+        style: foodCattxt3,
+      ),
+      Icon(Icons.arrow_forward_ios_sharp, color: primarycolor, size: 15),
+    SizedBox(width: 10,)
     ],
   );
 }
