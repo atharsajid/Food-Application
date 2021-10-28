@@ -16,38 +16,66 @@ Widget circleContainer(
     decoration: BoxDecoration(
       shape: BoxShape.circle,
       border: Border.all(color: primarycolor, width: borederwith),
-      image: DecorationImage(
-        image: AssetImage(img),
-        fit: BoxFit.cover
-      ),
+      image: DecorationImage(image: AssetImage(img), fit: BoxFit.cover),
     ),
   );
 }
 
-Widget priceContainer(
-    double height, double width,double borderwith String price) {
+Widget priceContainer(double height, double width, String price) {
   return Container(
-   
     height: height,
     width: width,
     decoration: BoxDecoration(
       shape: BoxShape.circle,
-      border: Border.all(color: primarycolor, width: borderwith),
-     
-      ),
-      child: Row(
-        children: [
-          Text("\$ ",style:TextStyle(color: primarycolor,fontSize: 12),),
-          Text(price,style: TextStyle(
-            fontSize: 16,
-            fontWeight: Font
-          ),),
-        ],
-      ),
-    );
-  
+      // border: Border.all(color: Colors.black, width: borderwith),
+      color: backgroundcolor,
+    ),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "\$ ",
+          style: TextStyle(color: primarycolor, fontSize: 14),
+        ),
+        Text(
+          price,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+  );
 }
-
+Widget priceContainer2(double height, double width, String price) {
+  return Container(
+    height: height,
+    width: width,
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      // border: Border.all(color: Colors.black, width: borderwith),
+      color: primarycolor,
+    ),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "\$ ",
+          style: TextStyle(color: backgroundcolor, fontSize: 14),
+        ),
+        Text(
+          price,
+          style: TextStyle(
+            color: backgroundcolor,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+  );
+}
 //Text Styles
 
 final locaitontxt = TextStyle(
@@ -71,6 +99,20 @@ final foodCattxt3 = TextStyle(
 final categoriestxt = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.bold,
+);
+final fooditemtext = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  color: backgroundcolor,
+);
+final othertext = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+);
+final ratingtext = TextStyle(
+  fontSize: 12,
+  color: Colors.grey[100],
 );
 
 //Searbar border style

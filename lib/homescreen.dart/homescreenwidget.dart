@@ -86,7 +86,43 @@ Widget favText(String category, String food, String search) {
         style: foodCattxt3,
       ),
       Icon(Icons.arrow_forward_ios_sharp, color: primarycolor, size: 15),
-    SizedBox(width: 10,)
+      SizedBox(
+        width: 10,
+      )
+    ],
+  );
+}
+
+//star widget
+Widget star(double size) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
     ],
   );
 }
