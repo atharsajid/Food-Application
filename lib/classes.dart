@@ -156,7 +156,7 @@ class _OtherFoodState extends State<OtherFood> {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             // childAspectRatio: 0.8,
             crossAxisCount: 2,
-            mainAxisSpacing: 20,
+            mainAxisSpacing: 50,
             crossAxisSpacing: 20,
           ),
           itemBuilder: (context, index) =>
@@ -175,7 +175,7 @@ class OtherFoodmethod extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Container(
-          height: 170,
+          height: 200,
           width: 170,
           decoration: BoxDecoration(
             color: backgroundcolor,
@@ -195,11 +195,11 @@ class OtherFoodmethod extends StatelessWidget {
           ),
         ),
         Align(
-          alignment: Alignment(0, 0.3),
+          alignment: Alignment(0, 0.35),
           child: star(20),
         ),
         Align(
-          alignment: Alignment(0, 0.5),
+          alignment: Alignment(0, 0.6),
           child: Text(
             otherfood.name,
             style: othertext,
@@ -209,6 +209,18 @@ class OtherFoodmethod extends StatelessWidget {
           top: -15,
           right: 0,
           child: priceContainer2(50, 50, otherfood.price),
+        ),
+        Align(
+          alignment: Alignment(0, 1.2),
+          child: Container(
+            height: 40,
+            width: 150,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(25),
+                      bottomRight: Radius.circular(25)),
+                  color: primarycolor),
+              child: cartbtn()),
         )
       ],
     );

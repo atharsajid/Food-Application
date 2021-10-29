@@ -126,3 +126,18 @@ Widget star(double size) {
     ],
   );
 }
+
+//cart button widget
+Widget cartbtn() {
+  return TextButton.icon(
+    onPressed: () {},
+    icon: Icon(
+      Icons.shopping_cart_rounded,
+      color: backgroundcolor,
+    ),
+    label: Text(
+      "Add to Cart",
+      style: TextStyle(color: backgroundcolor),
+    ),
+  );
+}
