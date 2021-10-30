@@ -21,7 +21,7 @@ Widget circleContainer(
   );
 }
 
-Widget priceContainer(double height, double width, String price) {
+Widget priceContainer(double height, double width, String price, double fontsize) {
   return Container(
     height: height,
     width: width,
@@ -35,12 +35,12 @@ Widget priceContainer(double height, double width, String price) {
       children: [
         Text(
           "\$ ",
-          style: TextStyle(color: primarycolor, fontSize: 14),
+          style: TextStyle(color: primarycolor, fontSize: 18,fontWeight: FontWeight.bold),
         ),
         Text(
           price,
           style: TextStyle(
-            fontSize: 18,
+            fontSize: fontsize,
             fontWeight: FontWeight.bold,
           ),
         ),

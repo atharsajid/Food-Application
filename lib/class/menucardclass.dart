@@ -53,7 +53,7 @@ class Favoritefoodm extends StatelessWidget {
           ),
           Align(
               alignment: Alignment(0.9, -1),
-              child: priceContainer(60, 60, foodItem.price)),
+              child: priceContainer(60, 60, foodItem.price,18)),
           Align(
             alignment: Alignment(0, 0.5),
             child: Text(foodItem.name, style: fooditemtext),

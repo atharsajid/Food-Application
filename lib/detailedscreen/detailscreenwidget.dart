@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/detailedscreen/detailconfig.dart';
 
 import '../colors.dart';
 
@@ -34,3 +35,104 @@ Widget scircleContainer(
     ),
   );
 }
+
+Widget expansion() {
+  return ExpansionTile(
+    childrenPadding: EdgeInsets.all(30).copyWith(top: 0),
+    title: Text(" Read more..",
+        style: TextStyle(
+            fontSize: 16, color: primarycolor, fontWeight: FontWeight.bold)),
+    children: [
+      Text(
+        lorem,
+        textAlign: TextAlign.justify,
+        style: TextStyle(fontSize: 15),
+      )
+    ],
+  );
+}
+//distance Widget
+
+Widget distanceRow(String distance) {
+  return Row(
+    children: [
+      Icon(
+        Icons.calendar_today,
+        color: primarycolor,
+      ),
+      SizedBox(
+        width: 10,
+      ),
+      Text(
+        distance,
+        style: TextStyle(
+          fontSize: 18,
+          color: greycolor,
+          fontWeight: FontWeight.bold,
+        ),
+      )
+    ],
+  );
+}
+
+//Add to cart
+Widget addCart() {
+  return Row(
+    children: [
+      // FloatingActionButton(
+      //   backgroundColor: primarycolor,
+      //   onPressed: () {},
+      //   child: Icon(
+      //     Icons.remove,
+      //     color: backgroundcolor,
+      //     size: 18,
+      //   ),
+      // ),
+
+      Text(
+        "1",
+        style: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      SizedBox(
+        width: 15,
+      ),
+      FloatingActionButton(
+        backgroundColor: primarycolor,
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          color: backgroundcolor,
+          size: 18,
+        ),
+      ),
+      SizedBox(
+        width: 20,
+      ),
+      ElevatedButton.icon(
+        style: ElevatedButton.styleFrom(
+            onPrimary: backgroundcolor,
+            primary: primarycolor,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(32))),
+        onPressed: () {},
+        icon: Icon(Icons.shopping_cart_rounded),
+        label: Text("Add to Cart"),
+      ),
+    ],
+  );
+}
+
+final elebtn = Container(
+  height: 50,
+  child: ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        primary: primarycolor,
+        onPrimary: backgroundcolor,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+      ),
+      onPressed: () {},
+      child: Icon(Icons.remove)),
+);

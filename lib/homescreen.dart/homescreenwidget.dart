@@ -96,7 +96,7 @@ Widget favText(String category, String food, String search) {
 //star widget
 Widget star(double size) {
   return Row(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.start,
     children: [
       Icon(
         Icons.star,
