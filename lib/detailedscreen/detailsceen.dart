@@ -118,7 +118,7 @@ class DetailScreen extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 20),
               padding: EdgeInsets.symmetric(horizontal: 0),
               child: Text(
-                foodDetail,
+                foodItem.detail,
                 textAlign: TextAlign.justify,
                 style: TextStyle(fontSize: 18),
               ),
@@ -126,7 +126,7 @@ class DetailScreen extends StatelessWidget {
             expansion(),
             Padding(
               padding: const EdgeInsets.only(left: 20),
-              child: distanceRow("0.5Km Distance"),
+              child: distanceRow(foodItem.distance),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 20, left: 20),

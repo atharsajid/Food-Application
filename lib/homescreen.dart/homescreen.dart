@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/class/categoryclass.dart';
 import 'package:food_app/class/menucardclass.dart';
+import 'package:food_app/class/navbar.dart';
 import 'package:food_app/classes.dart';
 import 'package:food_app/colors.dart';
 import 'package:food_app/homescreen.dart/constructor.dart';
@@ -21,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: backgroundcolor,
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             Container(
@@ -73,6 +75,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+      // bottomNavigationBar: BottomAppBar(
+        
+      //   color: backgroundcolor,
+      //   child: Navbar(),),
     );
   }
 }

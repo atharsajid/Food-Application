@@ -125,14 +125,24 @@ Widget addCart() {
   );
 }
 
-final elebtn = Container(
-  height: 50,
-  child: ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        primary: primarycolor,
-        onPrimary: backgroundcolor,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
-      ),
-      onPressed: () {},
-      child: Icon(Icons.remove)),
-);
+final elebtn = ElevatedButton(
+  
+    style: ElevatedButton.styleFrom(
+  minimumSize: Size(20, 55),    
+      primary: primarycolor,
+      onPrimary: backgroundcolor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+    ),
+    onPressed: () {},
+    child: Icon(Icons.remove));
+
+final elebtnadd = ElevatedButton(
+  
+    style: ElevatedButton.styleFrom(
+  minimumSize: Size(20, 55),    
+      primary: primarycolor,
+      onPrimary: backgroundcolor,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+    ),
+    onPressed: () {},
+    child: Icon(Icons.add));

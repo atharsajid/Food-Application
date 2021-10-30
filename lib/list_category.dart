@@ -10,47 +10,17 @@ List<Map> catergorieslist = [
   {'name': 'Fries', 'iconpath': 'images/fries.jpg'},
 ];
 
-List<Map> favfoodlist = [
-  {
-    'name': 'Messy Meat Burger',
-    'iconpath': 'images/b1.jpg',
-    'price': '\$6.99',
-    'comment': 'Customer Favorite',
-  },
-  {
-    'name': 'West Side Garlic Pizza',
-    'iconpath': 'images/p1.jpg',
-    'price': '\$9.99',
-    'comment': 'Customer Favorite',
-  },
-  {
-    'name': 'Peri Bites',
-    'iconpath': 'images/per1.jpg',
-    'price': '\$5.99',
-    'comment': 'Customer Favorite',
-  },
-  {
-    'name': 'Fajita Pizza',
-    'iconpath': 'images/p5.jpg',
-    'price': '\$10.99',
-    'comment': 'Preimum Pizza',
-  },
-  {
-    'name': 'Wraps & Pitas',
-    'iconpath': 'images/w1.jpg',
-    'price': '\$4.99',
-    'comment': 'High Rated',
-  },
-  {
-    'name': 'Chicken Noodle',
-    'iconpath': 'images/noodle.jpg',
-    'price': '\$6.99',
-    'comment': 'Healty food',
-  },
-  {
-    'name': 'Gigantic Burger',
-    'iconpath': 'images/b5.jpg',
-    'price': '\$7.99',
-    'comment': 'Best in Class',
-  },
-];
+String burger =
+    "This premium burger contains a 7oz.cheese stuffed patty, topped with warm nacho cheese, chilli cooked in a tomato, based sauce, onion rings, jalapenos, pickles, dijon mayo sauce and iceberg lettuce";
+
+String burger2 =
+    "Standing at 4-succulent patty tall, weighing in at more than half a kilo. It holds 2 crispy onion rings and is generously slathered with a special sauce. The new champion at Burger O'Clock";
+String pizza =
+    "Chicken Tikka, Garlic Ranch Sauce, Mushroom, Tomatoes, Mozzarella Cheese";
+String pizza2 = "Seekh Kabab with Creamy Chaska Sauce, Onions & Cheese";
+String friedchick =
+    "A full flamed grilled PERi-PERi chicken on a bed of Nando’s Spicy Rice, dressed with a Creamy Cashew Sauce, roasted cashews & fresh parsley. Served with lemon wedges and drinks for 4.";
+String wrap =
+    "Tender chicken fillet, Chilli Jam, lettuce and a tangy yoghurt sauce served in a toasted wrap";
+String noodle =
+    "Crisp lettuce, fresh tomato, Spicy Mixed Olives, cucumber, green peppers and onion";

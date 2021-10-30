@@ -142,3 +142,36 @@ Widget cartbtn() {
   );
 }
 
+
+Widget star2(double size) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+      Icon(
+        Icons.star,
+        color: Colors.yellow.shade800,
+        size: size,
+      ),
+    ],
+  );
+}

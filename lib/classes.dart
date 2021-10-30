@@ -81,7 +81,7 @@ class OtherFoodmethod extends StatelessWidget {
           ),
           Align(
             alignment: Alignment(0, 0.35),
-            child: star(20),
+            child: star2(20),
           ),
           Align(
             alignment: Alignment(0, 0.6),
