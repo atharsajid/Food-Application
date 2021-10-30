@@ -32,7 +32,7 @@ List<FoodItem> fooditems = [
   ),
   FoodItem(
     name: 'Fajita Pizza',
-    img: 'images/pizza.jpg',
+    img: 'images/p5.jpg',
     price: '10.9',
     comments: 'Preimum Pizza',
   ),

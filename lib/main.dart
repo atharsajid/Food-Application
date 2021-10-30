@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/homescreen.dart/constructor.dart';
+import 'package:food_app/detailedscreen/detailsceen.dart';
 import 'package:food_app/homescreen.dart/homescreen.dart';
 
 void main() {
@@ -15,11 +17,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-    debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: HomeScreen(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
