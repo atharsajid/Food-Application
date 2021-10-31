@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/colors.dart';
 
-final deNamTxt = TextStyle(
+const deNamTxt = TextStyle(
   color: Colors.black,
   fontSize: 28,
   fontWeight: FontWeight.bold,

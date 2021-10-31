@@ -78,7 +78,7 @@ Widget priceContainer2(double height, double width, String price) {
 }
 //Text Styles
 
-final locaitontxt = TextStyle(
+const locaitontxt = TextStyle(
   fontSize: 22,
   fontWeight: FontWeight.bold,
   letterSpacing: 1,
@@ -87,7 +87,7 @@ final locaitontxt = TextStyle(
 final foodCattxt1 =
     TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: primarycolor);
 
-final foodCattxt2 = TextStyle(
+const foodCattxt2 = TextStyle(
   fontSize: 24,
   fontWeight: FontWeight.bold,
 );
@@ -96,7 +96,7 @@ final foodCattxt3 = TextStyle(
   fontWeight: FontWeight.bold,
   color: primarycolor,
 );
-final categoriestxt = TextStyle(
+const categoriestxt = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.bold,
 );
@@ -105,7 +105,7 @@ final fooditemtext = TextStyle(
   fontWeight: FontWeight.bold,
   color: backgroundcolor,
 );
-final othertext = TextStyle(
+const othertext = TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.bold,
   color: Colors.black,

@@ -4,7 +4,7 @@ import 'package:food_app/homescreen.dart/constructor.dart';
 import 'package:food_app/detailedscreen/detailsceen.dart';
 import 'package:food_app/homescreen.dart/homescreenwidget.dart';
 import 'package:food_app/homescreen.dart/hscreen_configration.dart';
-import 'package:food_app/list_category.dart';
+
 
 
 
@@ -19,9 +19,9 @@ class _OtherFoodState extends State<OtherFood> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
+      margin:const EdgeInsets.only(right: 20),
       child: GridView.builder(
-        physics: ScrollPhysics(parent: null),
+        physics:const ScrollPhysics(parent: null),
         shrinkWrap: true,
         itemCount: otherfoods.length,
         gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
@@ -66,12 +66,12 @@ class OtherFoodmethod extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(0, -1),
+            alignment:const Alignment(0, -1),
             child: Container(
               width: 150,
               height: 100,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
+                borderRadius:const BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30)),
                 image: DecorationImage(
@@ -80,11 +80,11 @@ class OtherFoodmethod extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(0, 0.35),
+            alignment:const Alignment(0, 0.35),
             child: star2(20),
           ),
           Align(
-            alignment: Alignment(0, 0.6),
+            alignment:const Alignment(0, 0.6),
             child: Text(
               otherfood.name,
               style: othertext,
@@ -96,12 +96,12 @@ class OtherFoodmethod extends StatelessWidget {
             child: priceContainer2(50, 50, otherfood.price),
           ),
           Align(
-            alignment: Alignment(0, 1.2),
+            alignment:const Alignment(0, 1.2),
             child: Container(
                 height: 40,
                 width: 150,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
+                    borderRadius:const BorderRadius.only(
                         bottomLeft: Radius.circular(25),
                         bottomRight: Radius.circular(25)),
                     color: primarycolor),

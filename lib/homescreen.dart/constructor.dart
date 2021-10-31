@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:food_app/classes.dart';
+
 import 'package:food_app/list_category.dart';
 
 class FoodItem {

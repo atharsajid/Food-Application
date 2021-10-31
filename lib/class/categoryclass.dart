@@ -36,8 +36,8 @@ class _CategoriesState extends State<Categories> {
       child: Container(
         height: 40,
         width: 160,
-        margin: EdgeInsets.only(left: 10),
-        padding: EdgeInsets.only(left: 10),
+        margin:const EdgeInsets.only(left: 10),
+        padding:const EdgeInsets.only(left: 10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: isContainerSelected == index ? primarycolor : Secondarycolor,
@@ -49,7 +49,7 @@ class _CategoriesState extends State<Categories> {
                 catergorieslist[index]['iconpath'],
               ),
             ),
-            SizedBox(
+           const SizedBox(
               width: 2,
             ),
             Text(

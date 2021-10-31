@@ -45,7 +45,7 @@ class Favoritefoodm extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: Container(
-        margin: EdgeInsets.only(left: 20),
+        margin: const EdgeInsets.only(left: 20),
         width: 170,
         height: 170,
         color: backgroundcolor,
@@ -53,29 +53,29 @@ class Favoritefoodm extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             Container(
-              margin: EdgeInsets.only(top: 80),
+              margin:const EdgeInsets.only(top: 80),
               width: 170,
               height: 90,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10), color: primarycolor),
             ),
             Align(
-              alignment: Alignment(0, -0.9),
+              alignment:const Alignment(0, -0.9),
               child: circleContainer(110, 110, 1, foodItem.img),
             ),
             Align(
-                alignment: Alignment(0.9, -1),
+                alignment:const Alignment(0.9, -1),
                 child: priceContainer(60, 60, foodItem.price, 18)),
             Align(
-              alignment: Alignment(0, 0.5),
+              alignment:const Alignment(0, 0.5),
               child: Text(foodItem.name, style: fooditemtext),
             ),
             Align(
-              alignment: Alignment(0, 0.7),
+              alignment:const Alignment(0, 0.7),
               child: Text(foodItem.comments, style: ratingtext),
             ),
             Align(
-              alignment: Alignment(0, 0.9),
+              alignment:const Alignment(0, 0.9),
               child: star2(20),
             ),
           ],

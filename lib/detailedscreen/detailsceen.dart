@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:food_app/colors.dart';
 import 'package:food_app/detailedscreen/addcart.dart';
 import 'package:food_app/detailedscreen/detailconfig.dart';
@@ -15,13 +16,14 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
+        physics:const BouncingScrollPhysics(),
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(top: 55),
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              margin:const EdgeInsets.only(top: 55),
+              padding:const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -45,7 +47,7 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               height: 275,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -89,7 +91,7 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: 30),
+              padding:const EdgeInsets.symmetric(horizontal: 30),
               height: 120,
               child: Stack(
                 children: [
@@ -98,29 +100,29 @@ class DetailScreen extends StatelessWidget {
                     style: deNamTxt,
                   ),
                   Align(
-                      alignment: Alignment(-1, -0.3),
+                      alignment:const Alignment(-1, -0.3),
                       child: Text(
                         foodItem.comments,
                         style: decomTxt,
                       )),
                   Align(
-                    alignment: Alignment(-1, 0.3),
+                    alignment:const Alignment(-1, 0.3),
                     child: star(32),
                   ),
                   Align(
-                    alignment: Alignment(1, -1),
+                    alignment:const Alignment(1, -1),
                     child: priceContainer(80, 80, foodItem.price, 26),
                   ),
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(horizontal: 0),
+              margin:const EdgeInsets.symmetric(horizontal: 20),
+              padding:const EdgeInsets.symmetric(horizontal: 0),
               child: Text(
                 foodItem.detail,
                 textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 18),
+                style:const TextStyle(fontSize: 18),
               ),
             ),
             expansion(),
@@ -128,13 +130,14 @@ class DetailScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20),
               child: distanceRow(foodItem.distance),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20, left: 20),
+           const Padding(
+              padding:  EdgeInsets.only(top: 20, left: 20),
               child: AddCart(),
             ),
           ],
         ),
       ),
+
     );
   }
 }
